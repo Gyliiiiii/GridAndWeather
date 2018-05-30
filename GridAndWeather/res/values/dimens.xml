@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size25dp">25dp</dimen>
+    <dimen name="size19dp">19dp</dimen>
+</resources>

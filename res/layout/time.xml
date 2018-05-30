@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:rowCount="4"
+    android:columnCount="6" >
+
+    <Button
+        android:id="@+id/button1"
+        android:textSize="29dp"
+        android:text="@string/num1" />
+    <Button
+        android:id="@+id/button2"
+        android:textSize="29dp"
+        android:text="@string/num2" />
+    <Button
+        android:id="@+id/button3"
+        android:textSize="29dp"
+        android:text="@string/num3" />
+    <Button
+        android:id="@+id/button4"
+        android:textSize="29dp"
+        android:text="@string/num4" />
+    <Button
+        android:id="@+id/button5"
+        android:textSize="29dp"
+        android:text="@string/num5" />
+    <Button
+        android:id="@+id/button6"
+        android:textSize="29dp"
+        android:text="@string/num6" />
+    <Button
+        android:id="@+id/button7"
+
+        android:text="@string/num7" />
+    <Button
+        android:id="@+id/button8"
+        android:text="@string/num8" />
+    <Button
+        android:id="@+id/button9"
+        android:text="@string/num9" />
+    <Button
+        android:id="@+id/button10"
+        android:text="@string/num10" />
+    <Button
+        android:id="@+id/button11"
+        android:text="@string/num11" />
+    <Button
+        android:id="@+id/button12"
+        android:text="@string/num12" />
+    <Button
+        android:id="@+id/button13"
+        android:text="@string/num13" />
+    <Button
+        android:id="@+id/button14"
+        android:text="@string/num14" />
+    <Button
+        android:id="@+id/button15"
+        android:text="@string/num15" />
+    <Button
+        android:id="@+id/button16"
+        android:text="@string/num16" />
+    <Button
+        android:id="@+id/button17"
+        android:text="@string/num17" />
+    <Button
+        android:id="@+id/button18"
+        android:text="@string/num18" />
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="wrap_content"
+        android:text="@string/num19" />
+    <Button
+        android:id="@+id/button20"
+        android:text="@string/num20" />
+    <Button
+        android:id="@+id/button21"
+        android:text="@string/num21" />
+    <Button
+        android:id="@+id/button22"
+        android:text="@string/num22" />
+    <Button
+        android:id="@+id/button23"
+        android:text="@string/num23" />
+    <Button
+        android:id="@+id/button24"
+        android:text="@string/num24" />
+</GridLayout>

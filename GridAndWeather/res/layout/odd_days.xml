@@ -1,0 +1,182 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/oddlayout" >
+    
+    <LinearLayout 
+      android:id="@+id/LinearLayout01" 
+      android:orientation="horizontal"
+      android:gravity="center"
+      android:layout_width="fill_parent" 
+      android:layout_height="wrap_content"> 
+	    <LinearLayout 
+	          android:id="@+id/LinearLayout02" 
+	      	  android:orientation="vertical"
+	          android:gravity="center"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"> 
+	         >
+		      <TextView  
+				       android:id="@+id/city" 
+				       android:layout_width="wrap_content"
+				       android:layout_height="wrap_content" 
+				       android:textColor="@color/black"
+				   	   android:textSize="25sp"
+				   	   android:gravity="left"
+				   	   android:text="@string/city"
+				    />  
+			  <TextView  
+				       android:id="@+id/changecity" 
+				       android:layout_width="wrap_content"
+				       android:layout_height="wrap_content" 
+				       android:textColor="@color/black"
+				   	   android:textSize="15sp"
+				   	   android:gravity="right"
+				   	   android:layout_marginLeft="3sp"
+				   	   android:text="@string/changecity"
+				   />  
+		  </LinearLayout>       
+		  <ImageView 
+		      android:id="@+id/ImageView01"
+		      android:layout_width="100dip" 
+		      android:paddingLeft="5dip"
+		      android:layout_height="100dip">
+		    </ImageView>
+	        <LinearLayout 
+		      android:id="@+id/LinearLayout03" 
+		      android:orientation="vertical"
+		      android:paddingLeft="10dip"
+		      android:gravity="left"
+		      android:layout_width="fill_parent" 
+		      android:layout_height="wrap_content"> 
+			      <TextView  
+				       android:id="@+id/date"
+				       android:layout_width="fill_parent" 
+				       android:layout_height="wrap_content" 
+				       android:textColor="@color/black"
+				   	   android:textSize="12sp"
+				   	   android:gravity="left"
+				    />      	      
+				    <TextView  
+				       android:id="@+id/weather" 
+				       android:layout_width="fill_parent" 
+				       android:layout_height="wrap_content" 
+				       android:textColor="@color/black"
+				   	   android:textSize="12sp"
+				   	   android:gravity="left"
+				    />
+				    <TextView  
+				       android:id="@+id/temperature"
+				       android:layout_width="fill_parent" 
+				       android:layout_height="wrap_content" 
+				       android:textColor="@color/black"
+				   	   android:textSize="12sp"
+				   	   android:gravity="left"
+				    />      
+				    <TextView  
+				       android:id="@+id/wind"
+				       android:layout_width="fill_parent" 
+				       android:layout_height="wrap_content" 
+				       android:textColor="@color/black"
+				   	   android:textSize="12sp"
+				    />      
+			  </LinearLayout>  
+	    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <Button
+            android:id="@+id/addclass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/addcourse" />
+
+        <Button
+            android:id="@+id/oneweek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/oneweek" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:background="@color/blue1" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/button1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/button2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/button3" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/button4" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/button5" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/button6" />
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/button7" />
+
+    </LinearLayout>
+    <View  
+   		android:layout_width="fill_parent"  
+   	    android:layout_height="1dp" 
+   		android:background="?android:attr/listDivider"  
+	   />  
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

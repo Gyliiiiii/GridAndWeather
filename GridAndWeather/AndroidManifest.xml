@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bn.gridandweather"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="17"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/back"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.bn.gridandweather.LandingActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bn.gridandweather.OddDaysActivity">
+            </activity>
+         <activity
+            android:name="com.bn.gridandweather.WholeWeekActivity">
+            </activity>
+        <activity
+            android:name="com.bn.gridandweather.MondayActivity">
+           </activity>
+            <activity
+            android:name="com.bn.gridandweather.TuesdayActivity">
+            </activity>
+            <activity
+            android:name="com.bn.gridandweather.ThursdayActivity">
+            </activity>
+            <activity
+            android:name="com.bn.gridandweather.WednesdayActivity">
+            </activity>
+            <activity
+            android:name="com.bn.gridandweather.FridayActivity">
+            </activity>
+            <activity
+            android:name="com.bn.gridandweather.SaturdayActivity">
+            </activity>
+            <activity
+            android:name="com.bn.gridandweather.SundayActivity">
+            </activity>
+            <activity
+            android:name="com.bn.gridandweather.AddCourseActivity">
+            </activity>
+            <activity
+            android:name="com.bn.gridandweather.oneWeekActivity">
+            </activity>
+            <activity
+            android:name="com.bn.gridandweather.OddListSelectedActivity">
+            </activity>
+            <activity
+            android:name="com.bn.gridandweather.EditCourseActivity">
+            </activity>
+         <receiver 
+          android:name=".DayMessProvider"
+          android:label="课程表"
+          android:icon="@drawable/back">	
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/widgetprovider"></meta-data>
+            <intent-filter>
+                <action android:name="wyf.action.time_upadte"></action>
+                <action android:name="wyf.action.update_xq"></action>  
+                <action android:name="wyf.action.load_xq"></action>   
+                <action android:name="wyf.action.msg1"></action>
+                <action android:name="wyf.action.msg2"></action>
+                <action android:name="wyf.action.msg3"></action>
+                <action android:name="wyf.action.tc1"></action>
+                <action android:name="wyf.action.tc2"></action>
+                <action android:name="wyf.action.tc3"></action>
+                <action android:name="wyf.action.tc4"></action>
+                <action android:name="wyf.action.tc5"></action>
+                
+                <action android:name="wyf.action.tnum1"></action>
+                <action android:name="wyf.action.tnum2"></action>
+                <action android:name="wyf.action.tnum3"></action>
+                <action android:name="wyf.action.tnum4"></action>
+                <action android:name="wyf.action.tnum5"></action>
+                
+                <action android:name="wyf.action.tp1"></action>
+                <action android:name="wyf.action.tp2"></action>
+                <action android:name="wyf.action.tp3"></action>
+                <action android:name="wyf.action.tp4"></action>
+                <action android:name="wyf.action.tp5"></action>
+                
+                <action android:name="wyf.action.city"></action>    
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />                 
+            </intent-filter>
+        </receiver>
+        <service android:name="com.bn.gridandweather.TimeService" android:process=":remote"/>
+    </application>
+</manifest>

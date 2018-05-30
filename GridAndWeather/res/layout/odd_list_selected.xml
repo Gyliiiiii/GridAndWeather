@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/back" />
+        <TextView
+            android:id="@+id/textshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/back"
+            android:layout_alignBottom="@+id/back"
+            android:layout_centerHorizontal="true"
+            android:text="@string/textshow"
+            android:textSize="24sp" />
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/edit" />
+    </RelativeLayout>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	    <LinearLayout
+	        android:orientation="horizontal"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	        <ImageView
+	            android:layout_marginTop="5dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_width="15dp"
+	            android:layout_height="15dp"
+	            android:src="@drawable/cn" />
+		    <TextView 
+		        android:id="@+id/nameT01"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/courcename"
+		        android:textSize="20sp"/>
+		</LinearLayout>
+		 <LinearLayout
+	        android:orientation="horizontal"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	        <ImageView
+	            android:layout_marginTop="5dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_width="15dp"
+	            android:layout_height="15dp"
+	            android:src="@drawable/ct" />
+	        <TextView 
+		        android:id="@+id/teacherT01"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/teacher"
+		        android:textSize="20sp"/>
+		</LinearLayout>
+		<LinearLayout
+	        android:orientation="horizontal"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	        <ImageView
+	            android:layout_marginTop="57dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_width="15dp"
+	            android:layout_height="15dp"
+	            android:src="@drawable/cp" />
+			<TextView 
+		        android:id="@+id/addressT01"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/place"
+		        android:textSize="20sp"
+		        android:layout_marginTop="50dp"/>
+	     </LinearLayout>
+	     <LinearLayout
+	        android:orientation="horizontal"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	        <ImageView
+	            android:layout_marginTop="6dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_width="15dp"
+	            android:layout_height="15dp"
+	            android:src="@drawable/ccw" />
+			<TextView 
+		        android:id="@+id/numT01"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/courcenum"
+		        android:textSize="20sp"/>
+		</LinearLayout>
+		<LinearLayout
+	        android:orientation="horizontal"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	        <ImageView
+	            android:layout_marginTop="5dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_width="15dp"
+	            android:layout_height="15dp"
+	            android:src="@drawable/ccws" />
+			<TextView 
+		        android:id="@+id/weeksT01"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/weeknum"
+		        android:textSize="20sp"/>
+		</LinearLayout>
+		<LinearLayout
+	        android:orientation="horizontal"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	        <ImageView
+	            android:layout_marginTop="5dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_width="15dp"
+	            android:layout_height="15dp"
+	            android:src="@drawable/ccws" />   
+			<TextView 
+		        android:id="@+id/weekT01"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/days"
+		        android:textSize="20sp"/>
+	        </LinearLayout>
+	    <Button
+	        android:id="@+id/delete"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/delete" />
+	</LinearLayout>
+</LinearLayout>
